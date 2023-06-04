@@ -1,5 +1,5 @@
 import { Manrope } from 'next/font/google'
-import Footer from '../components/Footer'
+import Link from 'next/link'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -16,7 +16,20 @@ export default function Home() {
     blockchain dev
   </div>
   </div>
-  <Footer/>
+        <div className="w-full border-t-2 border-gray-800 px-3 py-1 flex justify-start gap-8 text-lg sm:text-2xl ">
+        <p className="hover:text-gray-400">
+            <Link href="/project">projects</Link>
+        </p>
+        <p className="hover:text-gray-400">
+            <Link href="https://github.com/dhruvdabhi101">github</Link>
+        </p>
+        <p className="hover:text-gray-400">
+            <Link href="https://linkedin.com/in/dhruvdabhi101">linkedin</Link>
+        </p>
+        <p className="hover:text-gray-400">
+            <Link href="https://dhruvblogs.xyz">blog</Link>
+        </p>
+        </div>
   
   </div>
   )
