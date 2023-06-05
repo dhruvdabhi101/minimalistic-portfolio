@@ -18,7 +18,7 @@ export default function Home() {
   </div>
         <div className="w-full border-t-2 border-gray-800 px-3 py-1 flex justify-start gap-8 text-lg sm:text-2xl ">
         <p className="hover:text-gray-400">
-            <Link href="/project">projects</Link>
+            <Link href="/projects">projects</Link>
         </p>
         <p className="hover:text-gray-400">
             <Link href="https://github.com/dhruvdabhi101">github</Link>
