@@ -1,5 +1,8 @@
 import { Manrope } from 'next/font/google'
 import Link from 'next/link'
+import dimg from '../public/D-removebg-preview.png'
+import "./globals.css"
+import Image from 'next/image'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -7,7 +10,7 @@ const manrope = Manrope({ subsets: ['latin'] })
 export default function Home() {
   return (
   <div className={"flex justify-between  text-white h-screen flex-col gap-4 max-h-full p-3 "+ ` ${manrope.className}`}>
-  <div>Profile Picture or something</div>
+  <Image src={dimg} alt="img" width={50} height={50}/>
   <div className='flex justify-center items-center flex-col'>
   <div className={'sm:text-6xl text-5xl'}>
      dhruv dabhi
