@@ -2,7 +2,7 @@ import { Manrope } from 'next/font/google'
 import Link from 'next/link'
 import "../globals.css"
 import Image from 'next/image'
-import dimg from '../../public/D-removebg-preview.png'
+import dimg from '../../public/DLogog.png'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
