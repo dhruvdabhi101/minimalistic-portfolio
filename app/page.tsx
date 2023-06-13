@@ -16,7 +16,7 @@ export default function Home() {
      dhruv dabhi
   </div>
   <div className='sm:text-2xl text-gray-400 text-xl'>
-    blockchain dev
+    software developer
   </div>
   <div className='sm:text-xl text-gray-400 text-xl'>
   i use vim btw
