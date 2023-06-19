@@ -19,9 +19,9 @@ export default function Home() {
                     </div>
                     <div className='flex flex-col justify-center items-center w-[100%]'>
                         <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 sm:gap-14 gap-10 overflow-y-auto'>
+                            <Card props={{name:"AIJect", desc:"AIJect is online platform where you can ask AI to generate questions which you can solve and implement them and make project with it without getting into tutorial hell."}}/>
                             <Card props={{name:"GetThatDoc", desc:"it is a notes sharing plateform, made with php,javascript,html-css. you can upload notes and download by just entering name of the subject"}}/>
                             <Card props={{name:"OnlineJobPortal", desc:"formaly, getthatjob, it is online job recruiting portal made with django framework. very minimal design and all the functionalities you can think of"}}/>
-                            <Card props={{name:"deez-interpreter", desc:"it is a interpreter for monkey language made with rust btw. very simple and easy to implement covers basic concepts of interpreter/compiler"}}/>
                             <Card props={{name:"firunner", desc:"it is a small plugin made with lua programming language for neovim btw. it simplifies process of interpreting python file with just one shortcut and prints output in new buffer"}}/>
                         </div>
                     </div>
