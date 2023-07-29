@@ -1,8 +1,5 @@
 import './globals.css'
-import { Manrope } from 'next/font/google' 
-
-const manrope = Manrope({ subsets: ['latin'] })
-
+import { Analytics } from '@vercel/analytics/react'
 
 export default function RootLayout({
   children,
@@ -18,7 +15,11 @@ export default function RootLayout({
     Dhruv Dabhi
     </title>
     </head>
-      <body>{children} </body>
+      <body>
+      {children}
+      <Analytics />
+        
+      </body>
     </html>
   )
 }
