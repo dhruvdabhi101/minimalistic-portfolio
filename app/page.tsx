@@ -15,7 +15,7 @@ export default function Home() {
                 <div className='text-gray-400'>dhruv</div>
                 <div className='flex flex-col gap-6 leading-6'>
                     <div className='text-gray-400 font-sm'></div>
-                    <div className='text-gray-200'>yo, i'm 20 y/0 <span className='font-medium'>software engineer</span> based in India,going to uni and hating with bottom of my heart. i like blockchain, i love learning different languages</div>
+                    <div className='text-gray-200'>yo, i'm 20 y/0 <span className='font-medium'>software engineer</span> based in India,going to uni and studying cs. i like blockchain, i love learning different languages</div>
                     <div className='text-gray-200'>right now, i'm trying to learn solana and rust. i use <span className='font-medium'>vim </span>btw.</div>
                 </div>
                 <div className='text-gray-200 space-y-6 my-10'>
