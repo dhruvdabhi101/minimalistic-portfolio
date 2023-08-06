@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
-const rootDirectory = 'content'
+const rootDirectory = 'content';
 
 export const getPostBySlug = async (slug: any) => {
   const realSlug = slug.replace(/\.mdx$/, '')
