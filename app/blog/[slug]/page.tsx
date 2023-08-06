@@ -11,6 +11,7 @@ const getPageContent = async (slug: any) => {
 
 export async function generateMetadata({ params }: any) {
     const { meta } = await getPageContent(params.slug)
+    // @ts-ignore
     return { title: meta.title }
 }
 
