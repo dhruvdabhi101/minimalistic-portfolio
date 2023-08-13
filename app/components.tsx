@@ -9,8 +9,8 @@ export function Footer() {
                     <div>dhruv</div>
                     <div className='flex flex-row gap-3'>
                         <a href="https://github.com/dhruvdabhi101" target='_blank'><VscGithub size={20} /></a>
-                        <a href="https://twitter.com/dhruvdabhi101" target='_blank'><VscTwitter size={20} /></a>
-                        <a href="mailto:dhruvdabhi101" target='_blank'><VscMail size={20} /></a>
+                        <a href="https://x.com/dhruvdabhi101" target='_blank'><VscTwitter size={20} /></a>
+                        <a href="mailto:dhruvdabhi101@gmail.com" target='_blank'><VscMail size={20} /></a>
                     </div>
                 </div>
     </>
