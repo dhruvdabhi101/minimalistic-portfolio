@@ -10,8 +10,8 @@ import { getAllPostsMeta } from '@/lib/mdx'
 const manrope = Manrope({ subsets: ['latin'] })
 
 
-export default function Home() {
-
+export default async function Home() {
+    const posts = await getAllPostsMeta()
 
     return (
         <div className={"w-full flex flex-row justify-center text-[13px] md:text-[15px] font-thin" + ` ${manrope.className}`}>
@@ -31,7 +31,7 @@ export default function Home() {
                     <div className='font-bold text-lg'> Projects </div>
                     <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
                         <div className='flex flex-col gap-3 '>
-                            <a href="https://github.com/dhruvdabhi101/aiject" target='_blank'><div className='underline font-medium '>aiject</div></a>
+                            <a href="https://github.com/dhruvdabhi101/aiject" target='_blank'><div className='font-medium underline'>aiject</div></a>
                             <div >ai based question maker website to help you with tech projects.</div>
                         </div>
                         <div className='flex flex-col gap-3 '>
@@ -55,20 +55,22 @@ export default function Home() {
 
 
                 <div className='text-gray-200 space-y-6'>
-                    <Link href="/blog"><div className='font-bold text-lg'> Blogs </div></Link>
+                    <div className='font-bold text-lg'> Blogs </div>
                     <div className='flex flex-col gap-5 mt-5'>
+                        {posts.slice(0, 3).map((post) => (
+
                             <Link
-                                href={`/blog/how-i-manage-75-attandance`}
+                                href={`/blog/${post.slug}`}
                             >
-                                <div className='flex flex-col gap-2'>
-                                    <div className=' font-medium text-gray-300'>How I manage 75% attendance</div>
-                                    <div className='text-gray-200'>In this blog, I reveal my way of managing 75% attandance and still be able to achieve/learn more.</div>
+                                <div className='flex flex-row justify-between'>
+                                    <div className=' text-gray-300 underline'>How I manage 75% attendance</div>
+                                    <div className='text-gray-400'>{post.date}</div>
                                 </div>
                             </Link>
+                        ))}
+                        <Link href={`/blog`} className='underline text-gray-200 '> all blogs →</Link>
                     </div>
                 </div>
-
-
                 <Footer />
             </div>
         </div>

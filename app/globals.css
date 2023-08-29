@@ -4,6 +4,16 @@
 
 
 
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #5f626b;
+    text-underline-offset: 0.3em;
+}
+.underline:hover {
+    text-decoration-color: #92959a;
+    transition: text-decoration-color 0.3s ease-in-out;
+}
+
 body {
     background-color: rgba(0, 0, 0, 0.9);
 }
