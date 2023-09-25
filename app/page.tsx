@@ -3,7 +3,7 @@ import Link from 'next/link'
 import dimg from '../public/DLogog.png'
 import "./globals.css"
 import Image from 'next/image'
-import { Footer } from './components'
+import ScrollProgressBar, { Footer } from './components'
 import { VscGithub, VscMail, VscTwitter } from 'react-icons/vsc'
 import { getAllPostsMeta } from '@/lib/mdx'
 

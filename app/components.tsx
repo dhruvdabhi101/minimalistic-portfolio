@@ -1,4 +1,5 @@
-
+"use client"
+import { useEffect, useState } from 'react';
 import { VscGithub, VscMail, VscTwitter } from 'react-icons/vsc'
 export function Footer() {
 
@@ -16,3 +17,30 @@ export function Footer() {
         </>
     )
 }
+
+const ScrollProgressBar = () => {
+  const [scrollPercentage, setScrollPercentage] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+      setScrollPercentage(scrollPercentage);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="scroll-progress-bar" style={{ width: `${scrollPercentage}%` }}></div>
+  );
+};
+
+export default ScrollProgressBar;
+

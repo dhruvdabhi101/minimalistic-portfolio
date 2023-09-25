@@ -17,3 +17,14 @@
 body {
     background-color: rgba(0, 0, 0, 0.9);
 }
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px; 
+  background-color: #ACADAC; 
+  z-index: 1000;
+  transition: width 0.2s ease-in-out;
+}
+

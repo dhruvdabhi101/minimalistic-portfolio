@@ -1,4 +1,4 @@
-import { Footer } from '@/app/components'
+import ScrollProgressBar, { Footer } from '@/app/components'
 import { getPostBySlug } from '@/lib/mdx'
 import { Manrope } from 'next/font/google'
 import Link from 'next/link'
@@ -20,6 +20,7 @@ const Page = async ({ params }: any) => {
 
     return (
         <div className={"w-full flex flex-row justify-center text-[13px] md:text-[15px] font-thin" + ` ${manrope.className}`}>
+        <ScrollProgressBar/>
             <div className='flex flex-col justify-center p-5 w-[100%]  sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[45%] '>
                 <Link href='/blog' className='text-gray-200 underline text-md '>
                     back
