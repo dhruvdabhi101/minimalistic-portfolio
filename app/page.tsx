@@ -26,7 +26,7 @@ export default async function Home() {
                 </div>
 
                 <div className='text-gray-200 space-y-6 my-10'>
-                    <div className='font-bold text-lg'> Projects </div>
+                    <div className='font-bold text-lg'> projects </div>
 
                     <div className='grid grid-cols-2 md:grid-cols-3 gap-5 tracking-wide'>
                         <div className='flex flex-col gap-3 '>
@@ -54,7 +54,7 @@ export default async function Home() {
 
 
                 <div className='text-gray-200 space-y-6 tracking-wide'>
-                    <div className='font-bold text-lg'> Blogs </div>
+                    <div className='font-bold text-lg'> blogs </div>
                     <div className='flex flex-col gap-5 mt-5'>
                         {posts.slice(0, 3).map((post) => (
 
