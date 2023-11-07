@@ -36,6 +36,7 @@ const Page = async ({ params }: any) => {
             prose-pre:font-thin prose-pre:text-gray-200 prose-pre:self-center
             prose-hr:font-thin prose-hr:text-gray-200 
             prose-pre:w-full prose-pre:md:w-2/3
+            tracking-wide
             '>
                     {content}</div>
                     <Footer/>

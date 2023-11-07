@@ -17,19 +17,18 @@ export default async function Home() {
         <div className={"w-full flex flex-row justify-center text-[13px] md:text-[15px] font-thin" + ` ${manrope.className}`}>
             <div className='flex flex-col justify-center p-5 w-[100%]  sm:w-[80%] md:w-[70%] lg:w-[55%] xl:w-[50%]'>
 
-
                 <div className='text-gray-400'>dhruv</div>
-                <div className='flex flex-col gap-6 leading-6'>
+
+                <div className='flex flex-col gap-6 leading-6 tracking-wide'>
                     <div className='text-gray-400 font-sm'></div>
-                    <div className='text-gray-200'>yo, i'm 20 y/0 <span className='font-medium'>software engineer</span> based in India,going to uni and studying cs. i like blockchain, i love learning different languages</div>
-                    <div className='text-gray-200'>right now, i'm trying to learn solana and rust. i use <span className='font-medium'>vim </span>btw.</div>
+                    <div className='text-gray-200'>yo, i'm 20 y/0 <span className='font-medium'>software engineer</span> based in India,going to uni, studying cs and playing ukulele on the side.</div>
+                    <div className='text-gray-200'>right now, i'm trying to learn ocaml. i use <span className='font-medium'>vim </span>btw.</div>
                 </div>
-
-
 
                 <div className='text-gray-200 space-y-6 my-10'>
                     <div className='font-bold text-lg'> Projects </div>
-                    <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
+
+                    <div className='grid grid-cols-2 md:grid-cols-3 gap-5 tracking-wide'>
                         <div className='flex flex-col gap-3 '>
                             <a href="https://github.com/dhruvdabhi101/aiject" target='_blank'><div className='font-medium underline'>aiject</div></a>
                             <div >ai based question maker website to help you with tech projects.</div>
@@ -54,7 +53,7 @@ export default async function Home() {
                 </div>
 
 
-                <div className='text-gray-200 space-y-6'>
+                <div className='text-gray-200 space-y-6 tracking-wide'>
                     <div className='font-bold text-lg'> Blogs </div>
                     <div className='flex flex-col gap-5 mt-5'>
                         {posts.slice(0, 3).map((post) => (
