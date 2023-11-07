@@ -42,8 +42,8 @@ export default async function Home() {
                             <div >command line wordl game built in rust</div>
                         </div>
                         <div className='flex flex-col gap-3 '>
-                            <a href="https://github.com/dhruvdabhi101/deez-interpreter" target='_blank'><div className='underline font-medium '>deez interpreter</div></a>
-                            <div >monkey lang interpreter built in rust (half finished)</div>
+                            <a href="https://github.com/dhruvdabhi101/md-parser" target='_blank'><div className='underline font-medium '>md-parser</div></a>
+                            <div >markdown parser currently being written into rust btw</div>
                         </div>
                         <div className='flex flex-col gap-3 '>
                             <a href="https://github.com/dhruvdabhi101/firunner" target='_blank'><div className='underline font-medium '>firunner</div></a>
