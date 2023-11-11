@@ -1,4 +1,3 @@
-"use client"
 import Link from 'next/link'
 import { getAllPostsMeta } from '@/lib/mdx'
 import { Manrope } from 'next/font/google'
@@ -12,9 +11,9 @@ const Page = async () => {
     return (
         <div className={"w-full flex flex-row justify-center text-[13px] md:text-[15px] font-thin" + ` ${manrope.className}`}>
             <div className='flex flex-col justify-center p-5 w-[100%] sm:w-[80%] md:w-[60%] lg:w-[55%] xl:w-[45%]'>
-                <Link href="/"><div className='text-gray-300 underline mb-5'>back</div></Link>
+                <Link href="/"><div className='text-gray-200 underline'>back</div></Link>
                 <div className='w-full self-center'>
-                    <Link href="/blog"><div className='font-bold text-lg text-gray-300 '> Blogs </div></Link>
+                    <Link href="/blog"><div className='font-bold text-lg text-gray-300 '> blogs </div></Link>
                     <div className='flex flex-col gap-5 mt-5 tracking-wide'>
                         {posts?.map(post => (
                             <Link

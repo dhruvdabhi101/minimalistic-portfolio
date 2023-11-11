@@ -21,8 +21,8 @@ const Page = async ({ params }: any) => {
     return (
         <div className={"w-full flex flex-row justify-center text-[13px] md:text-[15px] font-thin" + ` ${manrope.className}`}>
 {/*        <ScrollProgressBar/> */}
-            <div className='flex flex-col justify-center p-5 w-[100%] sm:w-[80%] md:w-[60%] lg:w-[55%] xl:w-[45%] '>
-                <Link href='/blog' className='text-gray-200 underline text-md '>
+            <div className='flex flex-col justify-center p-5 w-[100%] sm:w-[80%] md:w-[60%] lg:w-[55%] xl:w-[45%]'>
+                <Link href='/blog' className='text-gray-200 underline'>
                     back
                 </Link>
                 <div className='prose-md max-w-full prose prose-invert prose-h1:text-2xl prose-h1:text-gray-300 
