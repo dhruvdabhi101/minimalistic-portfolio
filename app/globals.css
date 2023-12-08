@@ -14,8 +14,10 @@
     transition: text-decoration-color 0.3s ease-in-out;
 }
 
-body {
-    background-color: rgba(0, 0, 0, 0.9);
+@layer {
+    body {
+        @apply selection:bg-white selection:bg-opacity-20 selection:text-gray-50 scroll-smooth bg-neutral-900;
+    }
 }
 
 .scroll-progress-bar {

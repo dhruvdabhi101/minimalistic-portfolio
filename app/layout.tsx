@@ -1,5 +1,6 @@
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
+import { GeistMono, GeistMonoNonVariable, GeistSans, GeistSansNonVariable } from 'geist/font'
 
 export default function RootLayout({
   children,
@@ -15,7 +16,7 @@ export default function RootLayout({
     Dhruv Dabhi
     </title>
     </head>
-      <body>
+      <body className={GeistSans.className}>
       {children}
       <Analytics />
         
