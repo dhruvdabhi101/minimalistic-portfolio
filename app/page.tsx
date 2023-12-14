@@ -41,7 +41,7 @@ export default async function Home() {
                             <div >Notes sharing platform built on PHP</div>
                         </div>
                         <div className='flex flex-col gap-3 w-44'>
-                            <a href="https://github.com/dhruvdabhi101/rust-wordl" target='_blank'><div className='underline font-normal '>rust-world</div></a>
+                            <a href="https://github.com/dhruvdabhi101/rust-wordl" target='_blank'><div className='underline font-normal '>rust-wordl</div></a>
                             <div >command line wordl game built in rust</div>
                         </div>
                         <div className='flex flex-col gap-3 w-44'>
