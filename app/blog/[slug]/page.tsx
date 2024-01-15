@@ -3,6 +3,7 @@ import { getPostBySlug } from '@/lib/mdx'
 import { GeistSans } from 'geist/font'
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { ImageResponse } from 'next/server'
 
 const getPageContent = async (slug: any) => {
     const { meta, content } = await getPostBySlug(slug)
@@ -11,14 +12,27 @@ const getPageContent = async (slug: any) => {
 
 export async function generateMetadata({ params }: any) {
     const { meta } = await getPageContent(params.slug)
+        // @ts-ignore
+    const image = meta.image;
     return { 
         // @ts-ignore
         title: meta.title,
         openGraph: {
-        // @ts-ignore
+            // @ts-ignore
             title: meta.title,
-        // @ts-ignore
+            // @ts-ignore
             description: meta.description,
+            type: "article",
+            author: "Dhruv Dabhi",
+            images: [
+                {
+                    url: `https://dhruvdabhi.me/public/${image}`,
+                    width: 1200,
+                    height: 630,
+                    // @ts-ignore
+                    alt: meta.title,
+                },
+            ],
         },
      }
 }
