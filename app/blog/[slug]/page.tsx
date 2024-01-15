@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: any) {
             author: "Dhruv Dabhi",
             images: [
                 {
-                    url: `https://dhruvdabhi.me/public/${image}`,
+                    url: `https://dhruvdabhi.me/${image}`,
                     width: 1200,
                     height: 630,
                     // @ts-ignore
