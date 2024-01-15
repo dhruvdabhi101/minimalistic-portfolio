@@ -1,6 +1,15 @@
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { GeistMono, GeistMonoNonVariable, GeistSans, GeistSansNonVariable } from 'geist/font'
+import { Metadata } from 'next'
+
+export const metatdata: Metadata = {
+  title: {
+    template: '%s | Dhruv Dabhi',
+    default: "Dhruv Dabhi"
+  },
+  description: "Dhruv Dabhi's personal + blog website",
+}
 
 export default function RootLayout({
   children,

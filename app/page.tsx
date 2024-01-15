@@ -59,18 +59,18 @@ export default async function Home() {
                 <div className='text-neutral-200 mt-8 mb-6 tracking-wide'>
                     <div className='font-bold text-lg'> blogs </div>
                     <div className='flex flex-col gap-5 mt-5'>
-                        {posts.slice(0, 3).map((post) => (
+                        {posts.slice(0, 3).reverse().map((post) => (
 
                             <Link
                                 href={`/blog/${post.slug}`}
                             >
                                 <div className='flex flex-row justify-between'>
-                                    <div className=' text-neutral-300 underline'>How I manage 75% attendance</div>
+                                    <div className=' text-neutral-300 underline'>{post.title}</div>
                                     <div className='text-neutral-400'>{post.date}</div>
                                 </div>
                             </Link>
                         ))}
-                        <Link href={`/blog`} className='underline text-neutral-200 '> all blogs →</Link>
+                        <Link href={`/blog`} className='underline text-neutral-200 '> all blogs &rarr;</Link>
                     </div>
                 </div>
                 <Footer />

@@ -1,10 +1,9 @@
 import ScrollProgressBar, { Footer } from '@/app/components'
 import { getPostBySlug } from '@/lib/mdx'
 import { GeistSans } from 'geist/font'
-// import { Manrope } from 'next/font/google'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
-// const manrope = Manrope({ subsets: ['latin'] })
 const getPageContent = async (slug: any) => {
     const { meta, content } = await getPostBySlug(slug)
     return { meta, content }
@@ -12,8 +11,16 @@ const getPageContent = async (slug: any) => {
 
 export async function generateMetadata({ params }: any) {
     const { meta } = await getPageContent(params.slug)
-    // @ts-ignore
-    return { title: meta.title }
+    return { 
+        // @ts-ignore
+        title: meta.title,
+        openGraph: {
+        // @ts-ignore
+            title: meta.title,
+        // @ts-ignore
+            description: meta.description,
+        },
+     }
 }
 
 const Page = async ({ params }: any) => {
@@ -28,7 +35,7 @@ const Page = async ({ params }: any) => {
                 </Link>
                 <div className='prose-md max-w-full prose prose-invert prose-h1:text-2xl prose-h1:text-neutral-300 
             prose-h2:text-lg prose-h2:font-bold prose-h2:text-neutral-300 prose-h3:text-md prose-h4:text-base prose-h5:text-sm prose-h6:text-xs
-            prose-a:underline prose-a:text-neutral-400
+            prose-a:underline prose-a:text-neutral-200 prose-a:font-thin
             prose-p:font-thin prose-p:text-neutral-200
             prose-ul:font-thin prose-ul:text-neutral-200
             prose-ol:font-thin prose-ol:text-neutral-200

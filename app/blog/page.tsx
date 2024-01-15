@@ -16,7 +16,7 @@ const Page = async () => {
                 <div className='w-full self-center'>
                     <Link href="/blog"><div className='font-bold text-lg text-gray-300 '> blogs </div></Link>
                     <div className='flex flex-col gap-5 mt-5 tracking-wide'>
-                        {posts?.map(post => (
+                        {posts?.reverse().map(post => (
                             <Link
                                 href={`/blog/${post.slug}`}
                             >
