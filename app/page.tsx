@@ -10,7 +10,10 @@ export default async function Home() {
     <div className={"w-full flex flex-row justify-center text-[14px] md:text-[15px] font-light"}>
       <div className='flex flex-col justify-center p-5 w-[100%] sm:w-[97%] md:w-[70%] lg:w-[55%] xl:w-[50%]'>
 
-        <div className='text-neutral-500'>dhruv</div>
+        <div className='text-neutral-500 flex justify-between'>
+          dhruv
+          <Link href={'https://scratch.dhruvdabhi.me'} className='hover:text-neutral-300'> scratch </Link>
+        </div>
 
         <div className='flex flex-col gap-6 leading-8 tracking-wide mt-7'>
           <div >
@@ -52,10 +55,11 @@ export default async function Home() {
         <div className='text-neutral-200 mt-8 mb-6 tracking-wide'>
           <div className='font-bold text-lg'> blogs </div>
           <div className='flex flex-col gap-5 mt-5'>
-            {posts.slice(0, 3).reverse().map((post) => (
+            {posts.slice(0, 3).reverse().map((post, index) => (
 
               <Link
                 href={`/blog/${post.slug}`}
+                key={index}
               >
                 <div className='flex flex-row justify-between'>
                   <div className=' text-neutral-300 underline'>{post.title}</div>

@@ -25,7 +25,6 @@ export const getAllPostsMeta = async () => {
 
   for (const file of files) {
     const { meta } = await getPostBySlug(file)
-    console.log(meta)
     posts.push(meta)
   }
 
