@@ -20,7 +20,7 @@ export default async function Home() {
           <div >
             <div className='text-neutral-400 text-xs tracking-wide'>IPA /dhru-v/ — firm/also a star ;)</div>
             <div className='text-neutral-300'>yo, i'm 20 y/o <span className='font-medium'>software engineer</span> based in India,going to uni, studying cs and playing ukulele on the side.
-              i love learning new languages, how computer works and i live on the street <span className='font-medium'>tty0</span></div>
+              i love learning new languages, how computer works</div>
           </div>
           <div className='text-neutral-300'>right now, i'm trying to learn assembly and c. i use <span className='font-medium'>vim </span>btw.</div>
         </div>
