@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "title": "rusty-leaf",
+      "description": "command line based static site generator tool based on darkdown",
+      "link": "https://github.com/dhruvdabhi101/rusty-leaf"
+    },
+    {
+      "title": "getthatdoc",
+      "description": "notes sharing platform built on PHP",
+      "link": "https://github.com/dhruvdabhi101/getthatdoc"
+    },
+    {
+      "title": "rust-wordl",
+      "description": "command line wordl game built in rust",
+      "link": "https://github.com/dhruvdabhi101/getthatdoc"
+    },
+    {
+      "title": "firunner",
+      "description": "neovim plugin to automate python script running built with lua",
+      "link": "https://github.com/dhruvdabhi101/firunner"
+    },
+    {
+      "title": "scratch",
+      "description": "curated list of the projects that i will be implementing in c from scratch",
+      "link": "https://scratch.dhruvdabhi.me"
+    }
+  ]
+}
